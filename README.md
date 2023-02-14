@@ -18,7 +18,7 @@ The radius point comes in the form of points I and J which are the x and y dista
 The fuction first draws a line between start and destination and finds the centre point. Using this centre point and the radius point the midpoint will always be a radius length away from the radius point and fall on the line created by the centre point and the radius point. 
 So the code finds the gradient of the line between the radius point and the centre point and the radius length. 
 As 
-'''y = mx and r^2 = x^2'''
+```y = mx and r^2 = x^2```
 
 
 Calc_Arc_Midpoint.py is used to test out the midpoint_of_arc_calc() function with a start point, end point and I, J points. 
