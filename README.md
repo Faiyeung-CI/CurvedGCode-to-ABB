@@ -17,11 +17,15 @@ The function midpoint_of_arc_calc() is the function that determines the midpoint
 The radius point comes in the form of points I and J which are the x and y distance between the start point to the radius point. 
 The fuction first draws a line between start and destination and finds the centre point. Using this centre point and the radius point the midpoint will always be a radius length away from the radius point and fall on the line created by the centre point and the radius point. 
 So the code finds the gradient of the line between the radius point and the centre point and the radius length. 
-As 
+As
 ```y = mx and r^2 = x^2 + y^2```
 Then solving for x gives
 ```x = sqrt(r^2/(1+m^2))```
 then y can be determined using ```y = mx```
+These are magnitude x and y components. 
+The 2 possible midpoints (clockwise or anticlockwise) will either be the radius point +x and +y or -x and -y from the radius point. 
+
+The complicated part is to find the correct midpoint. 
 
 
 
