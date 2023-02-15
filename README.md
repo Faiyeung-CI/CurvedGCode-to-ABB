@@ -11,7 +11,8 @@ On the other hand, the MoveC instructions in ABB RAPID Programming uses a start 
 and destination point. 
 chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://library.e.abb.com/public/688894b98123f87bc1257cc50044e809/Technical%20reference%20manual_RAPID_3HAC16581-1_revJ_en.pdf
 
-![Diagram 1 resized](https://user-images.githubusercontent.com/59031369/218909252-649fb86c-44ba-4e5b-b29d-8db4fdfd6540.jpg)
+![Diagram comparison resized](https://user-images.githubusercontent.com/59031369/218913959-0aa4e53b-6784-4d7c-8f9f-1a44299acf0f.jpg)
+
 
 GCode_to_Robtargets v2.py converts Curved GCode (G02,G03) (.gcode file) to MoveC and MoveL instructions in ABB RAPID program. 
 It was adapted from from Daniel Aguirre's  (https://github.com/DAguirreAg/GCode-to-ABB) linear Gcode translation to ABB RAPID programming instructions. 
