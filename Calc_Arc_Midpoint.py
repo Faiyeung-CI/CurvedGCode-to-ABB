@@ -1,4 +1,5 @@
 
+
 ##############################
 #                            #
 # Created by: Faiyeung Szeto #
@@ -9,8 +10,6 @@
 # Imports
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 import sys, getopt
 import os
 import math
@@ -26,13 +25,13 @@ def main(argv):
 # G0 F3600 X14.406 Y21.347 Z0.4
 # G3 X12.903 Y22.531 I5.597 J8.651 E5.22351 F1800
 
-    A = [14.406,21.347] #start point
-    B = [12.903,22.531] #destination point
-    O = [5.597, 8.651] #I and J values
+    # A = [14.406,21.347] #start point
+    # B = [12.903,22.531] #destination point
+    # O = [5.597, 8.651] #I and J values
 
-    # A = [14.66,22.42] #start point
-    # B = [16.411,22.647] #destination point
-    # O = [0.762, 0.988] #I and J values
+    A = [14.66,22.42] #start point
+    B = [16.411,22.647] #destination point
+    O = [0.762, 0.988] #I and J values
 
     # A = [14.406,21.347] #start point
     # B = [12.903,22.531] #destination point
@@ -97,7 +96,7 @@ def main(argv):
     refb = [x2-R[0], y2-R[1]]
     refStart = [A[0]-R[0], A[1]-R[1]]
 
-    #compare the determinant of the combined vectors of refstart and refa and the combined vecotrs of refstart and refb
+    #compare the determinant of the combined vectors of refstart and refa and the combined vectors of refstart and refb
     #if the deta > 0 then point a is anticlockwise from the start point
     #if the deta < 0 then point a is clockwise from the start point
     #https://math.stackexchange.com/questions/1027476/calculating-clockwise-anti-clockwise-angles-from-a-point
