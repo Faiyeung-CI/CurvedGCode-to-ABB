@@ -28,9 +28,6 @@ Then solving for x gives
 then y can be determined using ```y = mx```
 These are magnitude x and y components. 
 The 2 possible midpoints (clockwise or anticlockwise) will either be the radius point +x and +y or -x and -y from the radius point. 
-![Diagram 1](https://user-images.githubusercontent.com/59031369/218908771-48902e50-2f9e-40d8-b984-9777f3a37a58.jpg)![Diagram 2](https://user-images.githubusercontent.com/59031369/218908787-e305b43e-cad2-418f-89b0-18b49e9dabad.jpg)![Diagram 3](https://user-images.githubusercontent.com/59031369/218908825-5e4a9f9e-9af5-4e35-9445-2c0d2902aef8.jpg)
-
-
 
 The complicated part is to find the correct midpoint. This can be done by finding the determinant between the combined vectors of the vector between the radius and the start point and the vector between the radius and the midpoint in question. These vectors must be in reference to the radius as the origin. 
 
@@ -43,4 +40,7 @@ This is how the midpoint is found.
 
 Calc_Arc_Midpoint.py is used to test out the midpoint_of_arc_calc() function with a start point, end point and I, J points. 
 An online plotting interface can be used to visualize the example such as Desmos https://www.desmos.com/calculator
+
+![Diagram 1 resized](https://user-images.githubusercontent.com/59031369/218909252-649fb86c-44ba-4e5b-b29d-8db4fdfd6540.jpg)
+
 
