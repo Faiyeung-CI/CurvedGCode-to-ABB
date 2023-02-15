@@ -29,7 +29,8 @@ Then solving for x gives
 ```x = sqrt(r^2/(1+m^2))```
 then y can be determined using ```y = mx```
 These are magnitude x and y components. 
-The 2 possible midpoints (clockwise or anticlockwise) will either be the radius point +x and +y or -x and -y from the radius point. 
+The 2 possible midpoints (clockwise or anticlockwise) will either be the radius point +x and +y or -x and -y from the radius point.
+
 ![Diagram 2 resized](https://user-images.githubusercontent.com/59031369/218910310-d1a2baba-6214-4e23-a1d1-57da207d863b.jpg)
 
 The complicated part is to find the correct midpoint. This can be done by finding the determinant between the combined vectors of the vector between the radius and the start point and the vector between the radius and the midpoint in question. These vectors must be in reference to the radius as the origin. 
