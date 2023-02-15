@@ -11,6 +11,8 @@ On the other hand, the MoveC instructions in ABB RAPID Programming uses a start 
 and destination point. 
 chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://library.e.abb.com/public/688894b98123f87bc1257cc50044e809/Technical%20reference%20manual_RAPID_3HAC16581-1_revJ_en.pdf
 
+![Diagram 1 resized](https://user-images.githubusercontent.com/59031369/218909252-649fb86c-44ba-4e5b-b29d-8db4fdfd6540.jpg)
+
 GCode_to_Robtargets v2.py converts Curved GCode (G02,G03) (.gcode file) to MoveC and MoveL instructions in ABB RAPID program. 
 It was adapted from from Daniel Aguirre's  (https://github.com/DAguirreAg/GCode-to-ABB) linear Gcode translation to ABB RAPID programming instructions. 
 test_robprogramSim.txt can be copied and pasted into a RAPID program. 
@@ -28,10 +30,12 @@ Then solving for x gives
 then y can be determined using ```y = mx```
 These are magnitude x and y components. 
 The 2 possible midpoints (clockwise or anticlockwise) will either be the radius point +x and +y or -x and -y from the radius point. 
+![Diagram 2 resized](https://user-images.githubusercontent.com/59031369/218910310-d1a2baba-6214-4e23-a1d1-57da207d863b.jpg)
 
 The complicated part is to find the correct midpoint. This can be done by finding the determinant between the combined vectors of the vector between the radius and the start point and the vector between the radius and the midpoint in question. These vectors must be in reference to the radius as the origin. 
 
 https://math.stackexchange.com/questions/1027476/calculating-clockwise-anti-clockwise-angles-from-a-point
+![Diagram 3 resized](https://user-images.githubusercontent.com/59031369/218910325-11bfbcf6-5125-4e6b-bfff-f65f3d79b98c.jpg)
 
 If the determinant is greater than 0 then the midpoint is anti-clockwise from the start point. 
 If the determinant is less than 0 then the midpoint is clockwise from the start point. 
@@ -41,6 +45,6 @@ This is how the midpoint is found.
 Calc_Arc_Midpoint.py is used to test out the midpoint_of_arc_calc() function with a start point, end point and I, J points. 
 An online plotting interface can be used to visualize the example such as Desmos https://www.desmos.com/calculator
 
-![Diagram 1 resized](https://user-images.githubusercontent.com/59031369/218909252-649fb86c-44ba-4e5b-b29d-8db4fdfd6540.jpg)
+
 
 
