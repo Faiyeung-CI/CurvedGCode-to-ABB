@@ -29,11 +29,14 @@ then y can be determined using ```y = mx```
 These are magnitude x and y components. 
 The 2 possible midpoints (clockwise or anticlockwise) will either be the radius point +x and +y or -x and -y from the radius point. 
 
-The complicated part is to find the correct midpoint. This can be done by finding the determinant between
+The complicated part is to find the correct midpoint. This can be done by finding the determinant between the combined vectors of the vector between the radius and the start point and the vector between the radius and the midpoint in question. These vectors must be in reference to the radius as the origin. 
+
 https://math.stackexchange.com/questions/1027476/calculating-clockwise-anti-clockwise-angles-from-a-point
-First the midpoints coordinates need to 
 
+If the determinant is greater than 0 then the midpoint is anti-clockwise from the start point. 
+If the determinant is less than 0 then the midpoint is clockwise from the start point. 
 
+This is how the midpoint is found. 
 
 Calc_Arc_Midpoint.py is used to test out the midpoint_of_arc_calc() function with a start point, end point and I, J points. 
 An online plotting interface can be used to visualize the example such as Desmos https://www.desmos.com/calculator
