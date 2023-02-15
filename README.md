@@ -1,5 +1,5 @@
 # CurvedGCode-to-ABB
-GCode_to_Robtargets v2.py converts Curved GCode (G02,G03) to MoveC instructions in ABB RAPID program
+GCode_to_Robtargets v2.py converts Curved GCode (G02,G03) to MoveC instructions in ABB RAPID program.
 
 A simple way to 3D print concrete or other large structures is to repurpose a robot arm into a 3D printer. 
 Ordinary 3D printer slicers can be used to create machine tool paths that extrude layers of the print. 
